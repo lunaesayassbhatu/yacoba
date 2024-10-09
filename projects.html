@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>About Me</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1e0e0;
+            color: #ababab;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+            margin-top: 10vh;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .about-col-1 {
+            flex-basis: 50%;
+            order: 1; /* Change order to display after text */
+        }
+
+        .about-col-1 img {
+            width: 100%;
+            border-radius: 15px; 
+            margin-top: 50px;
+            height: 300px;
+        }
+
+        .about-col-2 {
+            flex-basis: 45%;
+            order: 2; /* Change order to display after image */
+            margin-left: 50px;
+        }
+
+        .sub-title {
+            font-size: 26px;
+            color: #29054d;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-left: 20px;
+
+        }
+
+        .p {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #131112;
+        }
+
+        .tab-title {
+            display: flex;
+            margin: 20px 0 40px;
+            color: #29054d;
+        }
+
+        .tab-links {
+            margin-right: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        .tab-links::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: width 0.3s;
+        }
+
+        .tab-links:hover {
+            color: #ff004f;
+        }
+
+        .tab-links:hover::after {
+            width: 100%;
+        }
+
+        .tab-links.active-link::after {
+            width: 50%;
+        }
+
+        .tab-contents {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .tab-contents.active-tab {
+            display: block;
+            margin-top: -30px;
+        }
+
+        .tab-contents ul {
+            padding-left: 20px;
+            padding-top: auto;
+            margin-top: 1px;
+        }
+
+        .tab-contents ul li {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="right-three-quarters">
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dissemination.html">Dissemination</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+            </ul>
+        </div>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title">Face mask littering in main streets of Bangkok</h1>
+            <div class="about-col-1">
+                <img src="images/2.jpg" alt="">
+                <img src="images/1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                
+                <p class="p">In this study, a face mask littering assessment in an urbanized environment, Bangkok, was carried out. Three streets in the city were selected and observed for face mask littering for 5 h per day for 42 days. Moreover, a questionnaire from 605 participants was recorded to determine mask handling and disposal practices. The study found a total of 170 single-use face masks within a 13.30 km path. Furthermore, the highest (40) and lowest (17) cumulative litter were recorded on Sunday and Monday, respectively. Buffer analysis at 300 m showed 47% of mask litter was found within five mass transit stations, while 15% are within a single street market. Of 605 respondents, 82.15% used a single-use face mask. Surprisingly, most of them (70.58%) disposed of used face masks in regular bins along with their household waste.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills1')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'duration1')">Duration</p>
+                    <p class="tab-links" onclick="opentab(event, 'publication1')">Publications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills1">
+                    <ul>
+                        <li><span>Environmental Management</span></li>
+                        <li><span>GIS</span></li>
+                        <li><span>time-series analysis</span></li>
+                        <li><span>Statistics</span></li>
+                        <li><span>Python</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="duration1">
+                    <ul>
+                        <li><span>2021-2022</span></li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="publication1">
+                    <ul>
+                       <li><a href="https://www.sciencedirect.com/science/article/pii/S0048969721060307">Publication-1</a></li> 
+                       <li><a href="https://www.sciencedirect.com/science/article/pii/S0048969721079389">Publication-2</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="p">I'm a seasoned full-stack web and app developer with a background in research and IT support. 
+                    At Aspire Pan Africa Consultancy, I contributed to research initiatives spanning 14 countries while providing robust IT assistance. 
+                    My expertise lies in crafting dynamic digital solutions tailored to diverse client needs, driven by a passion for innovation and positive change.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills2')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience2')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education2')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills2">
+                    <ul>
+                        <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br> Web app Development</li>
+                        <li><span>Mobile Development</span><br> Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience2">
+                    <ul>
+                        <li><span>2023-current</span><br> IT Assistant and Researcher at Aspire Pan Africa Consultancy</li>
+                        <li><span>2019-2021</span><br> Teacher in Eritrea Secondary School</li>
+                        <li><span>2014-2018</span><br> Part Time job in Isola Verde Internet Cafe</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education2">
+                    <ul>
+                        <li><span>2023</span><br> Designing Web/App interfaces</li>
+                        <li><span>2018</span><br> Web app Development</li>
+                        <li><span>2014</span><br> Graphics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="p">I'm a seasoned full-stack web and app developer with a background in research and IT support. 
+                    At Aspire Pan Africa Consultancy, I contributed to research initiatives spanning 14 countries while providing robust IT assistance. 
+                    My expertise lies in crafting dynamic digital solutions tailored to diverse client needs, driven by a passion for innovation and positive change.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills2')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience2')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education2')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills2">
+                    <ul>
+                        <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br> Web app Development</li>
+                        <li><span>Mobile Development</span><br> Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience2">
+                    <ul>
+                        <li><span>2023-current</span><br> IT Assistant and Researcher at Aspire Pan Africa Consultancy</li>
+                        <li><span>2019-2021</span><br> Teacher in Eritrea Secondary School</li>
+                        <li><span>2014-2018</span><br> Part Time job in Isola Verde Internet Cafe</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education2">
+                    <ul>
+                        <li><span>2023</span><br> Designing Web/App interfaces</li>
+                        <li><span>2018</span><br> Web app Development</li>
+                        <li><span>2014</span><br> Graphics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function opentab(event, tabName) {
+            var i, tabcontent, tablinks;
+            
+            // Get all elements with class="tab-contents" and hide them
+            tabcontent = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active-tab");
+            }
+            
+            // Get all elements with class="tab-links" and remove the class "active-link"
+            tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    
+</body>
+</html>

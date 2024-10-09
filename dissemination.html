@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1e0e0;
+            color: #1e1a1a;
+            overflow-x: hidden;
+                    }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: auto;
+            margin-top: 10vh;
+            margin-bottom: 20vh;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h3 {
+            color: #333;
+            padding-left: 1%;
+            font-size:larger;
+            
+        }
+        .publication h2 {
+            font-size: 15px;
+            color:#0066cc;
+            
+        }
+        .publication {
+            margin-bottom: 20px;
+        }
+        .publication hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        
+        .container p span{
+            font-weight: bold;
+        }
+        .accordion-header {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 15px;
+            text-align: left;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion-header1 {
+            background-color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            text-align: left;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        accordion-header3{
+             background-color: #0f0202;
+            cursor: pointer;
+            padding: 15px;
+            text-align: left;
+            border: none;
+            outline: none;
+            width: 50%;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+        }
+        .accordion-content {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .accordion-content p {
+            margin: 10px 0;
+        }
+        .arrow {
+            transition: transform 0.2s ease;
+        }
+        .accordion-header.active .arrow {
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="right-three-quarters">
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dissemination.html">Dissemination</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    <div class="container">
+        <button class="accordion-header" onclick="toggleAccordion(this)"><h1>Publications</h1><span class="arrow">&#x25C0</span></button>
+        <div class="accordion-content">
+            <div class="publication">
+                <h2>2024</h2>
+                <p class="authors">M. M. Yagoub, Tareefa AlSumaiti, Naeema Alhosani, Marwan Elmubarak, Othmane Kortbi, <span>Yacob T. Tesfaldet</span>, Mohamed Al Namani, Sarah R Aldhanhani (2024). 
+                    “Potential of using groceries in disasters/pandemics management: case of Al Ain City, UAE”. Cogent Business & Management.
+                <a class="doi" href="https://doi.org/10.1080/23311975.2024.2307639">https://doi.org/10.1080/23311975.2024.2307639</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors">M. M. Yagoub, <span>Yacob T. Tesfaldet</span>, Tareefa AlSumaiti, Naeema Al Hosani, Marwan G. Elmubarak. (2024). “Estimating population
+                    density using open-access satellite images and geographic information system: Case of Al Ain city, UAE”. Remote Sensing
+                    Applications: Society and Environment.   
+                <a class="doi" href="https://doi.org/10.1016/j.rsase.2023.101122">https://doi.org/10.1016/j.rsase.2023.101122</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <h2>2023</h2>
+                <div class="publication">
+                    <p class="authors">Nji T. Ndeh, <span>Yacob T. Tesfaldet</span>, Oluseye Oludoye. (2023) “Bibliometric analysis of the incidence of non-Covid respiratory
+                        disease Under NPI conditions during the pandemic”. Journal of Applied Life Sciences and Environment.                  
+                    <a class="doi" href="https://doi.org/10.46909/alse-562094">https://doi.org/10.46909/alse-562094</a></p>
+                    <hr>
+                </div>
+                <div class="publication">
+                    <p class="authors">M. M. Yagoub, Tareefa AlSumaiti, <span>Yacob T. Tesfaldet</span>, Khaled AlArfati, Maythaa Alraeesi, Mariam Eid Alketbi. (2023). “Integration of
+                        Analytic Hierarchy Process (AHP) and Remote Sensing to Assess Threats to Preservation of the Oases: Case of Al Ain, UAE”. Land.                                 
+                    <a class="doi" href="https://doi.org/10.3390/land12071269">https://doi.org/10.3390/land12071269</a></p>
+                    <hr>
+                </div>
+                <div class="publication">
+                    <p class="authors"><span>Yacob T. Tesfaldet</span>, Penradee Chanpiwat. (2023). “The effects of meteorology and biomass burning on urban air quality: The case of
+                        Bangkok”. Urban Climate.                  
+                    <a class="doi" href="https://doi.org/10.1016/j.uclim.2023.101441">https://doi.org/10.1016/j.uclim.2023.101441 </a></p>
+                    <hr>
+                </div>
+                <div class="publication">
+                    <p class="authors">Anna Diem, <span>Yacob T. Tesfaldet</span>, Taly Hocherman, Vineeta Hoon, Karin Zijlemans. (2023). “Marine litter in the Red Sea: Status and
+                        policy implications”. Marine Pollution Bulletin.                                   
+                    <a class="doi" href="https://doi.org/10.1016/j.marpolbul.2022.114495">https://doi.org/10.1016/j.marpolbul.2022.114495</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <h2>2022</h2>
+                <p class="authors">M. M. Yagoub, <span>Yacob T. Tesfaldet</span>, Marwan G. Elmubarak, Naeema Al Hosani. (2022). “Extraction of Urban Quality of Life Indicators
+                    Using Remote Sensing and Machine Learning: The Case of Al Ain City, United Arab Emirates (UAE)”. ISPRS International Journal of
+                    Geo-information.    
+                <a class="doi" href="https://doi.org/10.3390/ijgi11090458">https://doi.org/10.3390/ijgi11090458</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Nji T. Ndeh. (2022). “Public face masks wearing during the COVID-19 pandemic: A comprehensive analysis is
+                    needed for potential implications”. Journal of Hazardous Materials Advances.     
+                <a class="doi" href="https://doi.org/10.1016/j.hazadv.2022.100125">https://doi.org/10.1016/j.hazadv.2022.100125</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors">Nji T. Ndeh,<span>Yacob T. Tesfaldet</span>, Jariya Budnard, Pavadee Chuaicharoen. (2022) “The secondary outcome of public health
+                    measures amidst the COVID-19 pandemic in the spread of other respiratory infectious diseases in Thailand”. Travel Medicine and
+                    Infectious Disease.     
+                <a class="doi" href="https://doi.org/10.1016/j.tmaid.2022.102348">https://doi.org/10.1016/j.tmaid.2022.102348</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Anna Diem. (2022). “Wastewater treatment plants as pathways of marine litter: lessons learned from three
+                    catchments in Thailand”. Frontiers of Environmental Science and Engineering.    
+                <a class="doi" href="https://doi.org/10.1007/s11783-021-1515-7">https://doi.org/10.1007/s11783-021-1515-7</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Patrick Egon Ngomo Akwa. (2022). “The role of the informal waste sector in the municipal solid waste
+                    management systems: Case of Yaoundé”. Environmental Challenges.    
+                <a class="doi" href="https://doi.org/10.1016/j.envc.2022.100572">https://doi.org/10.1016/j.envc.2022.100572</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <h2>2021</h2>
+                <p class="authors">M. M. Yagoub, <span>Yacob T. Tesfaldet</span>, Marwan G. Elmubarak, Naeema Al Hosani. (2022). “Extraction of Urban Quality of Life Indicators
+                    Using Remote Sensing and Machine Learning: The Case of Al Ain City, United Arab Emirates (UAE)”. ISPRS International Journal of
+                    Geo-information.    
+                <a class="doi" href="https://doi.org/10.3390/ijgi11090458">https://doi.org/10.3390/ijgi11090458</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Nji T. Ndeh. (2022). “Public face masks wearing during the COVID-19 pandemic: A comprehensive analysis is
+                    needed for potential implications”. Journal of Hazardous Materials Advances.     
+                <a class="doi" href="https://doi.org/10.1016/j.hazadv.2022.100125">https://doi.org/10.1016/j.hazadv.2022.100125</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors">Nji T. Ndeh,<span>Yacob T. Tesfaldet</span>, Jariya Budnard, Pavadee Chuaicharoen. (2022) “The secondary outcome of public health
+                    measures amidst the COVID-19 pandemic in the spread of other respiratory infectious diseases in Thailand”. Travel Medicine and
+                    Infectious Disease.     
+                <a class="doi" href="https://doi.org/10.1016/j.tmaid.2022.102348">https://doi.org/10.1016/j.tmaid.2022.102348</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Anna Diem. (2022). “Wastewater treatment plants as pathways of marine litter: lessons learned from three
+                    catchments in Thailand”. Frontiers of Environmental Science and Engineering.    
+                <a class="doi" href="https://doi.org/10.1007/s11783-021-1515-7">https://doi.org/10.1007/s11783-021-1515-7</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Patrick Egon Ngomo Akwa. (2022). “The role of the informal waste sector in the municipal solid waste
+                    management systems: Case of Yaoundé”. Environmental Challenges.    
+                <a class="doi" href="https://doi.org/10.1016/j.envc.2022.100572">https://doi.org/10.1016/j.envc.2022.100572</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <h2>2020</h2>
+                <p class="authors">M. M. Yagoub, <span>Yacob T. Tesfaldet</span>, Marwan G. Elmubarak, Naeema Al Hosani. (2022). “Extraction of Urban Quality of Life Indicators
+                    Using Remote Sensing and Machine Learning: The Case of Al Ain City, United Arab Emirates (UAE)”. ISPRS International Journal of
+                    Geo-information.    
+                <a class="doi" href="https://doi.org/10.3390/ijgi11090458">https://doi.org/10.3390/ijgi11090458</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Nji T. Ndeh. (2022). “Public face masks wearing during the COVID-19 pandemic: A comprehensive analysis is
+                    needed for potential implications”. Journal of Hazardous Materials Advances.     
+                <a class="doi" href="https://doi.org/10.1016/j.hazadv.2022.100125">https://doi.org/10.1016/j.hazadv.2022.100125</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors">Nji T. Ndeh,<span>Yacob T. Tesfaldet</span>, Jariya Budnard, Pavadee Chuaicharoen. (2022) “The secondary outcome of public health
+                    measures amidst the COVID-19 pandemic in the spread of other respiratory infectious diseases in Thailand”. Travel Medicine and
+                    Infectious Disease.     
+                <a class="doi" href="https://doi.org/10.1016/j.tmaid.2022.102348">https://doi.org/10.1016/j.tmaid.2022.102348</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Anna Diem. (2022). “Wastewater treatment plants as pathways of marine litter: lessons learned from three
+                    catchments in Thailand”. Frontiers of Environmental Science and Engineering.    
+                <a class="doi" href="https://doi.org/10.1007/s11783-021-1515-7">https://doi.org/10.1007/s11783-021-1515-7</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Patrick Egon Ngomo Akwa. (2022). “The role of the informal waste sector in the municipal solid waste
+                    management systems: Case of Yaoundé”. Environmental Challenges.    
+                <a class="doi" href="https://doi.org/10.1016/j.envc.2022.100572">https://doi.org/10.1016/j.envc.2022.100572</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <h2>2019</h2>
+                <p class="authors">M. M. Yagoub, Tareefa AlSumaiti, Naeema Alhosani, Marwan Elmubarak, Othmane Kortbi, <span>Yacob T. Tesfaldet</span>, Mohamed Al Namani, Sarah R Aldhanhani (2024). 
+                    “Potential of using groceries in disasters/pandemics management: case of Al Ain City, UAE”. Cogent Business & Management.
+                <a class="doi" href="https://doi.org/10.1080/23311975.2024.2307639">https://doi.org/10.1080/23311975.2024.2307639</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors">M. M. Yagoub, <span>Yacob T. Tesfaldet</span>, Marwan G. Elmubarak, Naeema Al Hosani. (2022). “Extraction of Urban Quality of Life Indicators
+                    Using Remote Sensing and Machine Learning: The Case of Al Ain City, United Arab Emirates (UAE)”. ISPRS International Journal of
+                    Geo-information.    
+                <a class="doi" href="https://doi.org/10.3390/ijgi11090458">https://doi.org/10.3390/ijgi11090458</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Nji T. Ndeh. (2022). “Public face masks wearing during the COVID-19 pandemic: A comprehensive analysis is
+                    needed for potential implications”. Journal of Hazardous Materials Advances.     
+                <a class="doi" href="https://doi.org/10.1016/j.hazadv.2022.100125">https://doi.org/10.1016/j.hazadv.2022.100125</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors">Nji T. Ndeh,<span>Yacob T. Tesfaldet</span>, Jariya Budnard, Pavadee Chuaicharoen. (2022) “The secondary outcome of public health
+                    measures amidst the COVID-19 pandemic in the spread of other respiratory infectious diseases in Thailand”. Travel Medicine and
+                    Infectious Disease.     
+                <a class="doi" href="https://doi.org/10.1016/j.tmaid.2022.102348">https://doi.org/10.1016/j.tmaid.2022.102348</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Anna Diem. (2022). “Wastewater treatment plants as pathways of marine litter: lessons learned from three
+                    catchments in Thailand”. Frontiers of Environmental Science and Engineering.    
+                <a class="doi" href="https://doi.org/10.1007/s11783-021-1515-7">https://doi.org/10.1007/s11783-021-1515-7</a></p>
+                <hr>
+            </div>
+            <div class="publication">
+                <p class="authors"><span>Yacob T. Tesfaldet</span>, Patrick Egon Ngomo Akwa. (2022). “The role of the informal waste sector in the municipal solid waste
+                    management systems: Case of Yaoundé”. Environmental Challenges.    
+                <a class="doi" href="https://doi.org/10.1016/j.envc.2022.100572">https://doi.org/10.1016/j.envc.2022.100572</a></p>
+                <hr>
+            </div>
+            </div>
+            </div>
+            <div class="container">
+            <button class="accordion-header" onclick="toggleAccordion(this)"><h1>Conference & Forum</h1></h1><span class="arrow">&#x25C0;</span></button>
+        <div class="accordion-content">
+            <div class="publication">
+                <h2>2024</h2>
+                <p class="authors"><span>Yacob T. Tesfaldet</span> and Penradee Chanpiwat
+                    13th International Conference on Environmental Engineering, Science and Management at Pullman Khon
+                    Kaen Raja Orchid, Khon Kaen, Thailand. (May 9 to 10)
+                    “Air pollution and hospital admissions for cardiopulmonary diseases using AirQ+ in Bangkok, Thailand”.</p>
+                <hr>
+            </div>
+            <div class="publication">
+            <h2>2023</h2>
+            <p class="authors">European Forum Alpbach 2023 (EFA23, August 19 to Sept. 02), Alpbach, Austria.
+                        Attended seminar on Energy transition, climate justice, and diffusing carbon bomb. In addition, I have
+                        attended a research presentation on waste management and the use of AI for biodiversity conservation in
+                        national parks.</p>
+                    <hr>
+            </div>
+            <p class="authors">Emerging Pollutants: Protecting Water Quality for the Health of People and the Environment. UNESCO-IWRA
+                Online Conference: Participant (January 17 to 19).
+                <a class="doi" href="https://iwra.org/member/index.php?mainpage=&page=286&congressyear=2023&eventid=11">
+                    https://iwra.org/member/index.php?mainpage=&page=286&congressyear=2023&eventid=11</a></p>
+                <hr>
+            <div class="publication">
+                <h2>2022</h2>
+                <p class="authors">Anna Diem, <span>Yacob T. Tesfaldet</span>, Taly Hocherman, Vineeta Hoon, Karin Zijlemans. (2022). Marine litter in the
+                    Red Sea: Status and policy implications. (2022, November 17). Marine litter in the Red Sea: Status and policy
+                    implications. MICRO 2022, Online Atlas Edition: Plastic Pollution from MACRO to nano, online.
+                    <a class="doi" href="https://doi.org/10.5281/zenodo.7216969">https://doi.org/10.5281/zenodo.7216969</a></p>
+                <hr>
+            </div>
+        </div>
+            <div class="container">
+                <button class="accordion-header" onclick="toggleAccordion(this)"><h1>Featured Works and Blogs</h1></h1><span class="arrow">&#x25C0;</span></button>
+            <div class="accordion-content">
+                <div class="publication">
+                    <h2>2024</h2>
+                    <p class="authors">2D Time-Lapse Survey: Seasonal Groundwater Recharge Characterization Using Time-Lapse ERI (Advanced Geoscience Inc. Austin,
+                        Texas). <a class="doi" href="https://www.agiusa.com/2d-time-lapse-survey">https://www.agiusa.com/2d-time-lapse-survey</a></p> 
+                    <hr>
+                    <p class="authors">How Climate Change is Contributing to the East African Desert Locust Crisis. <a class="doi" href="https://medium.com/@pamojaearthsolutions/how-climate-change-is-contributing-to-the-east-african-desert-locust-crisisa3491e81885f">
+                        https://medium.com/@pamojaearthsolutions/how-climate-change-is-contributing-to-the-east-african-desert-locust-crisisa3491e81885f</a></p> 
+                <hr>
+                <p class="authors">Balancing Conservation and Human Needs in the Face of Water-Related Human-Elephant Conflict. <a class="doi" href="https://medium.com/@pamojaearthsolutions/balancing-conservation-and-human-needs-in-the-face-of-water-related-human-elephantconflict-
+                    8c733c00c508">https://medium.com/@pamojaearthsolutions/balancing-conservation-and-human-needs-in-the-face-of-water-related-human-elephantconflict-
+                    8c733c00c508</a></p> 
+                <hr>
+                </div>
+            </div>
+                <div class="container">
+                    <button class="accordion-header" onclick="toggleAccordion(this)"><h1>Peer Review Work</h1></h1><span class="arrow">&#x25C0;</span></button>
+                <div class="accordion-content">
+                    <div class="publication">
+                        <h2> 2020 - 2024</h2>
+                        <p class="authors">
+                            <ol>
+                            <li> Environmental Science and Pollution Research</li>
+                            <li> Biomedical and Environmental Sciences</li>
+                            <li>Marine Geo-resources and Geotechnology</li>
+                            <li> Marine Pollution Bulletin </li>
+                            <li>Journal of Environmental Chemical Engineering</li>
+                            <li>Built and Indoor Environment</li>
+                        </ol>
+                        </p>
+                        <hr>
+                    </div>
+
+                    </div>
+                    <div class="container">
+                        <button class="accordion-header" onclick="toggleAccordion(this)"><h1>Awards</h1></h1><span class="arrow">&#x25C0;</span></button>
+                    <div class="accordion-content">
+                        <div class="publication">
+                             <p class="authors">
+                                <ol>
+                                <li> Scholarship for Participation at the European Forum Alpbach 2023, Forum Alpbach Foundation, Austria. </li>
+                                <li> Clean and Green Campus Project. Certificate of Participation from Faculty of Technology and Environment, 
+                                    Prince of Songkla University, September 2019. </li>
+                                <li> First Prize in the Research Poster Competition. Prince of Songkla University Research and Poster Day April 2018. </li>
+                                <li> Outstanding Presenter in ESSAND Journal Club. Faculty of Technology and Environment, PSU, August 2017. </li>
+                                <li> Thailand International Cooperation Agency (TICA) scholarship for study MSc degree, August 2017 – May 2019. </li>
+                                <li> Bachelor of Science Graduate with Distinction, College of Science, Eritrea Institute of Technology, June 2014.</li>
+                                 
+                            </ol>
+                            </p>
+                            <hr>
+                        </div>
+                        </div>
+                        <div class="container">
+                            <button class="accordion-header" onclick="toggleAccordion(this)"><h1>Professional Membership</h1></h1><span class="arrow">&#x25C0;</span></button>
+                        <div class="accordion-content">
+                            <div class="publication">
+                                <p class="authors">
+                                    <ol>
+                                    <li> International Water Resources Association (IWRA) </li>
+                                    <li> International Society for Photogrammetry and Remote Sensing (ISPRS): Hannover, Niedersachsen, DE </li>
+                                                                        
+                                </ol>
+                                </p>
+                            </div>
+                            </div>
+        </div>
+
+       
+    <script>
+        function toggleAccordion(element) {
+            element.classList.toggle("active");
+            var content = element.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>
+

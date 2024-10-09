@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/03356609e5.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+    <style>
+        /* Additional styles for the success message */
+        #msg {
+            color: green;
+            margin-top: 10px;
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #d4edda;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            width: fit-content;
+            margin: 10px auto; /* Center the message */
+        }
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+    background-color: #f1e0e0;
+    overflow: hidden;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-quarter {
+    width: 50%;
+    height: 100%;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: 100px center right;
+}
+
+.right-three-quarters {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub-title {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.layer a {
+    margin-top: 10px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 1px auto;
+    width: fit-content;
+    border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    margin-bottom: -50px;
+}
+
+.btn:hover {
+    background-color: #ff004f;
+}
+
+#contact {
+    padding: 0px;
+    margin-top: 0vh;
+    margin-bottom: 0;
+}
+
+.html {
+    overflow-y: hidden;
+}
+
+.contact-left {
+    flex-basis: 35%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.contact-left h1 {
+    margin-left: -15vh;
+    margin-bottom: 40px;
+    color: #0a0303;
+}
+
+.contact-left p {
+    margin-right: 50px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    padding-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.social-icons i {
+    margin-right: 5px;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn3 {
+    display: inline-block;
+    background: #ff004f;
+    margin-left: 350px;
+    transform: translateX(-50%);
+}
+
+.btn.btn3:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn.btn3:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.contact-right form {
+    width: 100%;
+    margin-top: 60px;
+}
+
+form input, form textarea {
+    width: 95%;
+    border: 0;
+    outline: none;
+    background: #7b7979;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #4e4c4d;
+}
+
+.container1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0vh;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 90px;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+
+#msg {
+    color: green;
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="right-three-quarters">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dissemination.html">Dissemination</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="https://accounts.google.com"><i class="fas fa-envelope"></i> yacob.t.tesfaldet@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email " required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="copyright">
+                <p>© 2024 Luna Sbahtu. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzoBqiUuoGbFM4hrje5OraaN2SrdJCBHQmcGqOFRtGCIe9NMWPNhODxQkRmePa3tiCovA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your message has been sent successfully!";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                 }, 5000)
+                 form.reset()
+                })
+            .catch(error => {
+                msg.innerHTML = "Error sending message: " + error.message;
+            })
+        })
+      </script>
+</body>
+</html>
